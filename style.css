@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board{
+    position: relative;
+    background-color: black;
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.fruit{
+    background-color: greenyellow;
+    border-radius: 15px;
+}
+
+.snake{
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.head{
+    background-color: goldenrod;
+    border-radius: 10px;
+    transform: scale(1.02);
+}
+
+.gameOver{
+    background:white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    text-align: center;
+}
+
+.score{
+    position: absolute;
+    background-color: white;
+    right:1%;
+    top:1%;
+}
